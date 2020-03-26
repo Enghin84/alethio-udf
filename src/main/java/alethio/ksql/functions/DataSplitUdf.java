@@ -10,13 +10,13 @@ import java.util.List;
 
 @UdfDescription(
         name = "datasplit",
-        description = "Extract address from topic",
+        description = "Split string",
         version = "0.1.0",
         author = "Alethio"
 )
 
 public class DataSplitUdf {
-    @Udf(description = "Extract address from topic")
+    @Udf(description = "Split string")
     public String[] datasplit(
             @UdfParameter(value = "source", description = "topic string value")
             final String source
